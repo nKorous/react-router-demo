@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 import './App.css';
 import MainComponent from './components/main';
 import PageOneComponent from './components/page-one';
@@ -15,6 +15,11 @@ class App extends Component {
           tool/app bar, navigation buttons, etc. **/}
           <div className='toolbar'>
             <h2>Welcome!!</h2>
+          </div>
+          <div className="nav">
+            <button><NavLink to="/">Home</NavLink></button>
+            <button><NavLink to="/pageone">Page One</NavLink></button>
+            <button><NavLink to="/pagetwo">Page Two</NavLink></button>
           </div>
 
 

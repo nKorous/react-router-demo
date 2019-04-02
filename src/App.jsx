@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
 import MainComponent from './components/main';
+import PageOneComponent from './components/page-one';
+import PageTwoComponent from './components/page-two';
 
 class App extends Component {
   state={} //This wont have any state or props as it is really just the container for everything
@@ -21,6 +23,8 @@ class App extends Component {
         <Switch>
         {/** This is where your Routes will be defined. Switch basically says 'this is where the content should change' **/}
           <Route exact path="/" component={MainComponent} />
+          <Route path="/pageone" component={PageOneComponent} />
+          <Route path="/pagetwo" component={PageTwoComponent} />
         </Switch>
       </div>
       </Router>

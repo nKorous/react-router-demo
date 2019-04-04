@@ -17,9 +17,9 @@ class App extends Component {
             <h2>Welcome!!</h2>
           </div>
           <div className="nav">
-            <button><NavLink to="/">Home</NavLink></button>
-            <button><NavLink to="/pageone">Page One</NavLink></button>
-            <button><NavLink to="/pagetwo">Page Two</NavLink></button>
+            <button component={NavLink} className='linkButton' to="/">Home</button>
+            <button component={NavLink} className='linkButton' to="/pageone">Page One</button>
+            <button component={NavLink} className='linkButton' to="/pagetwo">Page Two</button>
           </div>
 
 

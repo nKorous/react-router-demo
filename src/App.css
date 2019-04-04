@@ -16,6 +16,20 @@
 
 .contentSection {
   position: absolute;
-  top: 80px;
+  top: 175px;
   align-self: center;
+}
+
+.nav {
+  position: absolute;
+  top: 80px;
+}
+
+.linkButton {
+  margin: 5px;
+  height: 75px;
+  width: 150px;
+  border: 2px ridge black;
+  box-shadow: 0px 0px 5px 0px gray;
+  font-size: 30px;
 }
